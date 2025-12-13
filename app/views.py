@@ -36,4 +36,7 @@ class FuncionarioDeleteView(DeleteView):
     template_name = "remover_funcionario.html"
     success_url = reverse_lazy("lista_funcionarios")
 
-
+class FuncionarioDeleteView(DeleteView):
+    model = Funcionario
+    template_name = "app/confirmar_delete.html"
+    success_url = reverse_lazy("lista_funcionarios")
